@@ -36,7 +36,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="/index" class="logo d-flex align-items-center"> <!-- kalau udah selesai ini ganti href ke index.php-->
+      <a href="/" class="logo d-flex align-items-center"> <!-- kalau udah selesai ini ganti href ke index.php-->
         <img src="assets/Photo/suklib.png" alt="">
         <span class="d-none d-lg-block">SukLib</span>
       </a>

@@ -270,7 +270,7 @@
   </li><!-- End Register Page Nav -->
 
   <li class="nav-item">
-    <a class="nav-link collapsed" href="sumbangan_buku.php">
+    <a class="nav-link collapsed" href="/sumbangan">
       <i class="bi bi-box2-heart"></i>
       <span>Sumbang Buku</span>
     </a>
