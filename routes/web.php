@@ -53,3 +53,7 @@ Route::get('/riwayatform', function () {
 Route::get('/riwayatpengembalian', function () {
     return view('riwayatpengembalian');
 });
+
+Route::get('/sumbangan', function () {
+    return view('sumbangan');
+});
