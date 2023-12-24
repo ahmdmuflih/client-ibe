@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SuklibController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,9 +43,7 @@ Route::get('/search', function () {
     return view('search');
 });
 
-Route::get('/riwayat', function () {
-    return view('riwayat');
-});
+Route::get('/riwayat', [SuklibController::class, 'riwayat']);
 
 Route::get('/riwayatform', function () {
     return view('riwayatform');

@@ -442,57 +442,27 @@
                   </tr>
                 </thead>
                 <tbody>
+                  @foreach($bukuData as $buku)
                   <tr>
                     <th scope="row">
                       <a><img src="/Photo/book1.png" alt=""></a>
                     </th>
                     <td>
-                      <a class="text-dark fw-bold">DON'T MAKE ME THINK</a><br>
-                      <a class="text-dark">Steve Krug, 2000</a><br>
-                      <a class="text-dark fw-light">Second Edition</a>
+                      <a class="text-dark fw-bold">{{ $buku->judul_buku }}</a><br>
+                      <a class="text-dark">Steve Krug</a><br>
                     </td>
-                    <td>Hard Copy</td> 
+                    <td>HARD COPY</td> 
                     <td>02 Dec 2023</td>
                     <td>08 Dec 2023</td>
                     <td>Returned</td>
                     <td>
-                      <a class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">Pengembalian</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <a><img src="/Photo/book6.png" alt=""></a>
-                    </th>
-                    <td>
-                      <a class="text-dark fw-bold">RICH DAD POOR DAD</a><br>
-                      <a class="text-dark">Robert T.Kiyosaki, 1997</a><br>
-                      <a class="text-dark fw-light"></a>
-                    </td>
-                    <td>Hard Copy</td> 
-                    <td>10 Dec 2023</td>
-                    <td>14 Dec 2023</td>
-                    <td class="text-success">Currently Borrowed</td>
-                    <td>
                       <a class="btn btn-sm btn-success" href="/riwayatform">Pengembalian</a>
                     </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      <a><img src="/Photo/new1.png" alt=""></a>
-                    </th>
-                    <td>
-                      <a class="text-dark fw-bold">FILOSOFI TERAS</a><br>
-                      <a class="text-dark">Henry. M, 2018</a><br>
-                      <a class="text-dark fw-light"></a>
-                    </td>
-                    <td>Hard Copy</td> 
-                    <td>08 Dec 2023</td>
-                    <td>11 Dec 2023</td>
-                    <td class="text-danger">Over Due</td>
                     <td>
                       <a class="btn btn-sm btn-danger" href="bayar.html">Bayar Denda</a>
                     </td>
                   </tr>
+                  @endforeach
                 </tbody>
               </table>
             </div>
